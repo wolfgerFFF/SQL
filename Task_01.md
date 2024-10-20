@@ -39,6 +39,11 @@ INSERT INTO books (title, author, year, price) VALUES
 Необходимо вывести название, автора и цену для книг, которые были изданы после
 1950 года в порядке возрастания цены
 
+SELECT title, author, price
+FROM books
+WHERE year > 1950
+ORDER BY price ASC;
+
 Задание 3: Выборка книг автора «George Orwell»
 Имеется таблица (сущность) с книгами books. У сущности имеются следующие поля
 (атрибуты):
@@ -49,6 +54,7 @@ INSERT INTO books (title, author, year, price) VALUES
 ● price – цена.
 Необходимо вывести идентификатор, название, автора, год издания и цену для книг, у
 которых автор «Джордж Оруэлл» и изданные после 1940 года..
+
 SELECT id, title, author, year, price
 FROM books
 WHERE author = 'Джордж Оруэлл' AND year > 1940;
